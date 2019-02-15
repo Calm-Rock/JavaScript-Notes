@@ -1,0 +1,174 @@
+createdAt: "2018-05-06T01:31:02.386Z"
+updatedAt: "2018-05-06T04:47:31.698Z"
+type: "SNIPPET_NOTE"
+folder: "8121e771b5582b371f1f"
+title: "Object Oriented and Functional Programming"
+description: "Object Oriented and Functional Programming"
+snippets: [
+  {
+    name: "Declare JS objects as variables"
+    mode: "text"
+    content: '''
+      //Declare JavaScript Objects as Variables 
+      
+      var motorBike = {
+      
+        // Only change code below this line.
+        "wheels" : 2,
+        "engines" : 1,
+        "seats" : 2
+      };
+    '''
+  }
+  {
+    name: "Construct JavaScript Objects with Functions"
+    mode: "Plain Text"
+    content: '''
+      //Construct JavaScript Objects with Functions
+      
+      We are also able to create objects using constructor functions.
+      A constructor function is given a capitalized name to make it clear that it is a constructor.
+      Here's an example of a constructor function:
+      
+      var Car = function() {
+        this.wheels = 4;
+        this.engines = 1;
+        this.seats = 5;
+      };
+      
+      In a constructor the this variable refers to the new object being created by the constructor. So when we write,
+      
+        this.wheels = 4;
+        
+      inside of the constructor we are giving the new object it creates a property called wheels with a value of 4.
+      
+      You can think of a constructor as a description for the object it will create.
+      
+      
+      
+    '''
+  }
+  {
+    name: "Make Instances of Objects with a Constructor Function"
+    mode: "Plain Text"
+    content: '''
+      // Make Instances of Objects with a Constructor Function
+      
+      
+      To use a constructor function we call it with the new keyword in front of it like:
+      
+      var myCar = new Car();
+      
+      myCar is now an instance of the Car constructor that looks like the object it described:
+      
+      {
+        wheels: 4,
+        engines: 1,
+        seats: 5
+      }
+      
+      Note that it is important to use the new keyword when calling a constructor. This is how Javascript knows to create a new object and that all the references to this inside the constructor should be referring to this new object.
+      
+      Now, once the myCar instance is created it can be used like any other object and can have its properties accessed and modified the same way you would usually. For example:
+      
+      myCar.turboType = "twin";
+      Our myCar variable now has a property turboType with a value of "twin".
+    '''
+  }
+  {
+    name: "Make Unique Objects by Passing Parameters to our Constructor"
+    mode: "Plain Text"
+    content: '''
+      // Make Unique Objects by Passing Parameters to our Constructor
+      
+      The constructor we have is great, but what if we don't always want to create the same object?
+      To solve this we can add parameters to our constructor. We do this like the following example:
+      
+      var Car = function(wheels, seats, engines) {
+        this.wheels = wheels;
+        this.seats = seats;
+        this.engines = engines;
+      };
+      
+      Now we can pass in arguments when we call our constructor.
+      var myCar = new Car(6, 3, 1);
+      
+      This code will create an object that uses the arguments we passed in and looks like:
+      {
+        wheels: 6,
+        seats: 3,
+        engines: 1
+      }
+    '''
+  }
+  {
+    name: "Make Object Properties Private"
+    mode: "Plain Text"
+    content: '''
+      // Make Object Properties Private
+      
+      Objects have their own attributes, called properties, and their own functions, called methods.
+      
+      In the previous challenges, we used the this keyword to reference public properties of the current object.
+      
+      We can also create private properties and private methods, which aren't accessible from outside the object.
+      
+      To do this, we create the variable inside the constructor using the var keyword we're familiar with, instead of creating it as a property of this.
+      
+      This is useful for when we need to store information about an object but we want to control how it is used by outside code.
+      
+      For example, what if we want to store the speed our car is traveling at but we only want outside code to be able to modify it by accelerating or decelerating, so the speed changes in a controlled way?
+      
+      In the editor you can see an example of a Car constructor that implements this pattern.
+      
+      Now try it yourself! Modify the Bike constructor to have a private property called gear and two public methods called getGear and setGear to get and set that value.
+      
+      //CODE
+      
+      var Bike = function() {
+      
+        // Only change code below this line.
+        var gear = "";
+        
+        this.setGear = function(num){
+          gear = num;
+        };
+        this.getGear = function(){
+          return gear;
+        };
+      
+      };
+      
+      var myBike = new Bike();
+      
+      myBike.setGear(4);
+      ,uBike.setGear(); // 4
+      
+      
+    '''
+  }
+  {
+    name: "Iterate over Arrays with map"
+    mode: "Plain Text"
+    content: '''
+      // Iterate over Arrays with map
+      
+      The map method is a convenient way to iterate through arrays. Here's an example usage:
+      var oldArray = [1, 2, 3];
+      
+      var timesFour = oldArray.map(function(val){
+        return val * 4;
+      });
+      
+      console.log(timesFour); // returns [4, 8, 12]
+      console.log(oldArray);  // returns [1, 2, 3]
+      
+      The map method will iterate through every element of the array, creating a new array with values that have been modified by the callback function, and return it. Note that it does not modify the original array.
+      
+      In our example the callback only uses the value of the array element (the val argument) but your callback can also include arguments for the index and array being acted on.
+    '''
+  }
+]
+tags: []
+isStarred: false
+isTrashed: false
