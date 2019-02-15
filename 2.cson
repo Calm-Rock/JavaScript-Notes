@@ -1,0 +1,326 @@
+createdAt: "2018-05-03T15:04:50.679Z"
+updatedAt: "2018-05-04T08:17:01.637Z"
+type: "SNIPPET_NOTE"
+folder: "8121e771b5582b371f1f"
+title: "Java Script 1"
+description: "Java Script 1"
+snippets: [
+  {
+    name: "Comments"
+    mode: "JavaScript"
+    content: '''
+      // --> For single line comments
+      /**/ --> Used for  multi line comments
+      
+      
+    '''
+  }
+  {
+    name: "Variables"
+    mode: "Plain Text"
+    content: '''
+      // Js provides 7 data types: undefined, null, boolean, string, symbol, number and object.
+      // For example, a computer can distinguish between number 12 and string "dog".
+      //Computer can perform mathematical operations on numbers but not on string
+      /*Variables allow computers to store and manipulate data in  a dynamic fashion.
+      They do this by using a "label" to point to data rather than using the data itself .Any of the 7 data types can be stored in a variable.
+      */
+      
+      /* Computer variables are different from mathematical variables in that they can store different values at different times.*/
+      
+      To declare a js variable, we use:
+      var ourName ;
+      //This creates a variable named ourName
+      /*Variable names must not contain spaces and must not start with numbers, other than this we can ue any combo.*/
+      
+    '''
+  }
+  {
+    name: "Assingning values to variable"
+    mode: "Plain Text"
+    content: '''
+      //We use assignment operator to assign value to a variable.
+      
+      myVariable = 5;
+      This assigns number value 5 to our variable.
+      ////Assignment goes from right to left. Everything to right  of = is resolved first before being assigned to the variable.
+      
+      myVar = 5;
+      myNum = myVar;
+      //Assigns 5 to myVar and then resolves myVar to 5 again and assigns it to myNum.
+      
+      //a should be assigned to b with = 
+      //This means b = a;
+      
+      
+      / We can initialize (ie assigning a value) a variable to an initialize value in the same line as it is declared.
+      var myVar = 0;
+      
+      
+    '''
+  }
+  {
+    name: "Uninitialized variables"
+    mode: "Plain Text"
+    content: '''
+      /* When js variables are defined, they have an initial value of 'undefined'.If we do a mathematical operation on undefined variable your result wil be 'NaN' ie Not a Number. If you concatenate a string with an undefined variable, you will get a literal string of "undefined". */
+      
+    '''
+  }
+  {
+    name: "Case Sensetivity of var"
+    mode: "Plain Text"
+    content: '''
+      //In js, all variable and function name are case sensitive.
+      //Example, myVar is not same as MYVAR.
+      
+      /*Best practise is :
+      Write variable names in Javascript in camelCase. In camelCase, multi-word variable names have the first word in lowercase and the first letter of each subsequent word is capitalized.
+      Examples:
+      var someVariable;
+      var anotherVariableName;
+      var thisVariableNameIsTooLong;
+      */
+    '''
+  }
+  {
+    name: "Playing with Numbers"
+    mode: "Plain Text"
+    content: '''
+      Numbers represent numeric data.
+       
+       // + symbol is used for addition between two numbers.
+      // - symbol is used for subtraction. 
+      // * is used for multiplication.
+      // / is used for division.
+      //  We can increment or add 1 to a variable with the ++ operator. i++ is equivivalent to i = i+1;
+      // We can decrement or decrease a variable by 1 with the -- operator. i-- is equivivalent to i = i-1;
+      
+    '''
+  }
+  {
+    name: "Decimal numbers"
+    mode: "Plain Text"
+    content: '''
+      // We can store decimal numbers in variable too.
+      //Decimals are sometimes referred to as floating point or floats.
+      example:
+      myVar = 5.7;
+      
+      // In js. we can perform calculations with decimal numbers, just like whole numbers.
+      Example:
+      var product = 2.0*2.5;
+      
+    '''
+  }
+  {
+    name: "Remainder operator"
+    mode: "Plain Text"
+    content: '''
+      //// The % operator is called as the remainder operator in js, it gives the remainder of division of two numbers.
+      
+      Example:
+      5 % 2 = 1
+      
+      // Usage: In maths, we can check if a number is even or odd by checking the remainder of the //division of the number by two.
+      Example:
+      45 % 2 =1(odd)
+      26 % 2 =0(even)
+      
+      //// Note: Remainder operator is sometimes referred to as modulus operator incorrectly. It is very similar to modulus operator but does not work properly with -ve numbers.
+      
+    '''
+  }
+  {
+    name: "Compound assignment with augment "
+    mode: "Plain Text"
+    content: '''
+      // In programming, it is common to use assignments to modify the contents of a variable.
+      // myVar = myVar + 5; mis used to add 5 to myVar.
+      //// For such a common operation, we have operators which do both mathematical assignmeant and operation in one step.
+      
+      Example += operator
+      myVar += 5; will add 5 to myVar.
+      
+      Example -= operator
+      myVar -= 5; will substract 5 from myVar.
+      
+      Example *= operator
+      myVar *= 5; will multiply myVar by 5.
+      
+      Example /= operator
+      myVar /= 5;
+      
+      
+      
+    '''
+  }
+  {
+    name: "string variables"
+    mode: "Plain Text"
+    content: '''
+      // String is a series of 0 or more characters enclosed in single or double quotes.
+      
+      var myName = "Hey there!" ; 
+      // Hey there!" is called string literal.(we can use a single quote as well)
+    '''
+  }
+  {
+    name: "escaping literal quotes"
+    mode: "Plain Text"
+    content: '''
+      // If we want a " or ' quote inside our string, we can escape a quote from considering it as an end of string quote by placing a  ( \\ ) in front of the quote.
+      
+      var sampleStr = "\\'Hey there!\\' , said Peter." ;
+      
+      
+      // String values in js may be written with single or double quotes as long as you start and end with //the same type of quote.
+      //Single quotes and double quotes are functionally identical in js.
+      //The value in using one or the other has to do with the need to escape quotes of the same type. //Unless they are escaped, you cannot have more than one pair of whichever quote type begins a //string.
+      //If you have a string with many double quotes, this can be difficult to read and write. Instead, use single quotes:
+      
+      'This string has "double quotes" in it. And "probably" lots of them.'
+      
+      
+    '''
+  }
+  {
+    name: "escaping sequences in string"
+    mode: "Plain Text"
+    content: '''
+      // Quotes are not the only characters that can be escaped inside a string.
+      
+      Code
+      Output
+      \\'
+      single quote
+      \\"
+      double quote
+      \\\\
+      backslash
+      \\n
+      newline
+      \\r
+      carriage return
+      \\t
+      tab
+      \\b
+      backspace
+      \\f
+      form feed
+      
+      //Note that the backslash itself must be escaped in order to display as a backslash.
+      
+    '''
+  }
+  {
+    name: "concatenating strings "
+    mode: "Plain Text"
+    content: '''
+      // To concatenate strings, we will use the + operator.
+      Example:
+      'My name is ' + 'Peter.'
+      
+      // Note: Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
+      
+      //We can also use the += operator to concatenate a string onto the end of an existing string //variable. this can be very helpful to break a long string over several lines.
+      
+      Example:
+      var ourStr = "I come first. ";
+      ourStr += "I come second.";
+      
+      
+      
+    '''
+  }
+  {
+    name: "constructing strings with variables"
+    mode: "Plain Text"
+    content: '''
+      // By using the concatenation operator ( + ), we can insert one or more variables into a string //you're building.
+      
+      Example:
+      var ourName = "Free Code Camp";
+      var ourStr = "Hello, our name is " + ourName + ", how are you?";
+      
+      
+      
+    '''
+  }
+  {
+    name: "appending variables to strings"
+    mode: "Plain Text"
+    content: '''
+      //Just as we can build string over multiple lines out of string literals, we can also append variables //to a string using the += operator.
+      Example:
+      var anAdjective = "awesome!";
+      var ourStr = "Free Code Camp is ";
+      ourStr += anAdjective;
+      
+    '''
+  }
+  {
+    name: "length of string"
+    mode: "Plain Text"
+    content: '''
+      //To find length of string, use .length after the string variable or the string literal.
+      Example:
+      "Alan Peter".length; // 10
+      
+       var firstName = "Charles"
+      firstName.length
+      
+      
+      
+    '''
+  }
+  {
+    name: "find characters in string"
+    mode: "Plain Text"
+    content: '''
+      //Bracket notation is a way to get a character at a specific index within a string.
+      // Index starts from 0
+      
+      Example:
+      var firstLetterOfLastName = "";
+      var lastName = "Lovelace";
+      firstLetterOfLastName = lastName[0]; // L
+      
+    '''
+  }
+  {
+    name: "String immutability"
+    mode: "Plain Text"
+    content: '''
+      // In js, the string values are immutable, ie they cannot be altered once created
+      
+      //the following code
+      For example:
+      
+      var myStr = "Bob";
+      myStr[0] = "J";
+      //cannot change the value of myStr to "Job", because the contents of myStr cannot be altered. 
+      
+      //Note that this does not mean that myStr cannot be changed, just that the individual characters of a string literal cannot be changed. The only way to change myStr would be to assign it with a new string, like this:
+      
+      var myStr = "Bob";
+      myStr = "Job";
+    '''
+  }
+  {
+    name: "Find nth cahracter in string"
+    mode: "Plain Text"
+    content: '''
+      //To find last character in a string, we can use  qwerty[qwerty.length - 1 ]  ( if our variable name is //qwerty.)
+      
+      //To find nth to last character in a string, we can use the same logic as above
+      for example, to get third-to-last letter of the 
+      var firstName = "Charles" string we can use
+      firstName[firstName.length - 3]
+      
+    '''
+  }
+]
+tags: []
+isStarred: false
+isTrashed: false

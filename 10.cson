@@ -1,0 +1,305 @@
+createdAt: "2018-05-04T08:18:12.184Z"
+updatedAt: "2018-05-04T17:35:11.025Z"
+type: "SNIPPET_NOTE"
+folder: "8121e771b5582b371f1f"
+title: "Java Script 2"
+description: "Java Script 2"
+snippets: [
+  {
+    name: "word Blank challenge"
+    mode: "text"
+    content: '''
+      var sentence = 'The ' +'  '+ myAdjective + '  ' + myNoun + '  ' + myVerb + '  ' + myAdverb +'.';
+      // In this way we can add space between words when using variable while concatenating strings.
+      
+    '''
+  }
+  {
+    name: "JS Arrays"
+    mode: "Plain Text"
+    content: '''
+      // With js arrays variables, we can store several pieces of data in one place.
+      
+      //To declare an array variable, we use '[ ]' aquare brackets.
+      Example:
+      var sandwich = ["Peanut Butter" , "Jelly" , "Bread"]
+      // Entries are seperated by commas.
+      
+      //Note: We can enter different data types in the same array
+      Example:
+      var array = ["Peter", 23];
+      
+      //MULTI DIMENSIONAL ARRAYS
+      
+      //We can nest one array within another array, this is called multi dimensional array.
+      Example: 
+      [["Bulls", 23], ["White Sox", 45]]
+      
+      
+    '''
+  }
+  {
+    name: "Access array data"
+    mode: "Plain Text"
+    content: '''
+      // We can access array data using indexes.
+      
+      //We use the bracket notation just like strings, and it specifies an entry in the array.
+      // First element has index = 0
+      
+      Example
+      var array = [1,2,3];
+      array[0]; // equals 1
+      var data = array[1];  // equals 2
+      
+    '''
+  }
+  {
+    name: "Modify array data with indexes"
+    mode: "Plain Text"
+    content: '''
+      //Unlikestrings, the arrays of entries are mutable and can be changed freely.
+      
+      Example
+      var ourArray = [3,2,1];
+      ourArray[0] = 1; // equals [1,2,1]
+      
+      
+    '''
+  }
+  {
+    name: "Accessing multidimensional arrays with indexes"
+    mode: "Plain Text"
+    content: '''
+      // Multidimensional array can be thought of as array of arrays.
+      //First set of brackets refers to the entries in the outer-most array (first layer) and each additional //pair of brackets refers to the next level of entries inside. 
+      
+      Example
+      var arr = [
+          [1,2,3],
+          [4,5,6],
+          [7,8,9],
+          [[10,11,12], 13, 14]
+      ];
+      arr[3]; // equals [[10,11,12], 13, 14]
+      arr[3][0]; // equals [10,11,12]
+      arr[3][0][1]; // equals 11
+      
+      
+    '''
+  }
+  {
+    name: "Array Manipulation"
+    mode: "Plain Text"
+    content: '''
+      //PUSH
+      // .push() function is an easy way to append data to the end of an array.
+      // it takes 'one or more' parameters and pushes it to the end of the array.
+      
+      Example:
+      var arr = []1,2,3
+      arr.push(4);
+      //arr is now  [1,2,3,4]
+      
+      
+      //POP
+      //.pop() function is used to pop off a value from the end of the array.
+      //Any type of entry can be popped out of an array - numbes, strings, even nested arrays.
+      
+      Example:
+      var oneDown = [1,2,3,4].pop() ;
+      The varaible oneDown now holds the value 4 and the array becomes [1,2,3]
+      
+      //SHIFT
+      //It's same as .pop() but it instead removes first element from the array.
+      
+      
+      //UNSHIFT
+      //to add elements to the beginnig of an array, we use .unshift()
+      Example:
+      myArray.unshift(["Paul",35]);
+      
+    '''
+  }
+  {
+    name: "JS functions"
+    mode: "Plain Text"
+    content: '''
+      // In js we can divide our code into reusable parts called functions.
+      
+      Here's an example of a function:
+      function functionName() {
+        console.log("Hello World");
+      }
+      
+      You can call or invoke this function by using its name followed by parentheses, like this:
+      functionName();
+      
+      //All of the code between curly braces will be executed every time the function is called.
+      
+      
+    '''
+  }
+  {
+    name: "Passing values to functions"
+    mode: "Plain Text"
+    content: '''
+      // Parameters are variables that act as  paceholders for the values that are to be input to a //function when it is called. When a function is defined, it is typically  defined along with one or //more parameters. The actual values are input(or "passed") into the function when it is called are //known as arguments.
+      
+      Here is a function with two parameters, param1 and param2:
+      function testFun(param1, param2) {
+        console.log(param1, param2);
+      }
+      Then we can call testFun:
+      testFun("Hello", "World");
+      
+      // Note that you could call testFun again with different arguments and the parameters would take on the value of the new arguments.
+      
+      
+      
+    '''
+  }
+  {
+    name: "Global scope and functions"
+    mode: "Plain Text"
+    content: '''
+      //In js scope refers to the visiblity of variables. 
+      //Variables which are defined outside of a function block have a Global scope.This means that they //can be seen everywhere in your JS code.
+      
+      //Variables which are used without the var keyword are automatically created in the global scope. //This can create unintended consequences elsewhere in your code or when running a function //again. You should always declare your variables with var.
+      
+      
+    '''
+  }
+  {
+    name: "Local scope and functions"
+    mode: "Plain Text"
+    content: '''
+      // Variables which are declared within a function as well as the function parameters have local //scope. This means they are only visible within the function.
+      
+      Here is a function myTest with a local variable called loc.
+      function myTest() {
+        var loc = "foo";
+        console.log(loc);
+      }
+      myTest(); // "foo"
+      console.log(loc); // "undefined"
+      
+      
+      
+    '''
+  }
+  {
+    name: "GLobal vs Local scope in functions"
+    mode: "Plain Text"
+    content: '''
+      // It is possible to have both local and global variables with teh same name. When you do so, the //local variable takes precedence over the global variable.
+      
+      In this example:
+      var someVar = "Hat";
+      function myFun() {
+        var someVar = "Head";
+        return someVar;
+      }
+      The function myFun will return "Head" because the local version of the variable is present.
+      
+    '''
+  }
+  {
+    name: "return a value from a function"
+    mode: "Plain Text"
+    content: '''
+      // We use return statement to send a value out of a function.
+      
+      
+      Example:
+      function plusThree(num){
+      return num + 3;
+      }
+      
+      var answer = plusThree(5);   //8
+      
+      
+      
+      
+      
+      
+    '''
+  }
+  {
+    name: "Assignment with a returned value"
+    mode: "Plain Text"
+    content: '''
+      //We can take the returned value of a function and assign it to a variable.
+      
+      function processArg(num) {
+        return (num + 3) / 5;
+      }
+      processed = processArg(7);   //2
+      
+      
+    '''
+  }
+  {
+    name: "Queue"
+    mode: "Plain Text"
+    content: '''
+      // In CS, a queue is an abstract data structure ( a data structure is a particular way of organizing //and storing data in a computer so that it can be accessed and modified efficiently. )  where items //are kept in order.
+      //New items can be added at the back of the queue and old items are taken off from the front of //the queue.
+      
+      
+      function nextInLine(arr, item) {
+        // Your code here
+        arr.push(item);
+       var value = arr.shift();
+        return value;  // Change this line
+      }
+      
+      console.log(nextInLine( [ 1,2,3,4,5], 10));    // this will return 1 and the array becomes [2,3,4,5,10] 
+      
+      
+    '''
+  }
+  {
+    name: "Boolean values"
+    mode: "Plain Text"
+    content: '''
+      // Booleans may only be one of the two values: true or false. They are basically little on-off switches, where true is "on" and false is "off". These two states are mutually exclusive. (ie can't happen at the same time)
+      
+      //Note
+      //Boolean values are never written with quotes. The strings "true" and "false" are not Boolean and //have no special meaning in JavaScript.
+      
+      function welcomeToBooleans() {
+      return true;
+    '''
+  }
+  {
+    name: "if statements"
+    mode: "Plain Text"
+    content: '''
+      // If statements are used to make decisions in code.
+      /*The keyword if tells JavaScript to execute the code in the curly braces under certain conditions, defined in the parentheses. These conditions are known as Boolean conditions because they may only be true or false.
+      When the condition evaluates to true, the program executes the statement inside the curly braces. When the Boolean condition evaluates to false, the statement inside the curly braces will not execute.
+      Pseudocode
+      if (condition is true) {
+        statement is executed
+      }
+      Example
+      function test (myCondition) {
+        if (myCondition) {
+           return "It was true";
+        }
+        return "It was false";
+      }
+      test(true);  // returns "It was true"
+      test(false); // returns "It was false"
+      
+      When test is called with a value of true, the if statement evaluates myCondition to see if it is true or not. Since it is true, the function returns "It was true". When we call test with a value of false, myCondition is not true and the statement in the curly braces is not executed and the function returns "It was false".
+      */
+      
+    '''
+  }
+]
+tags: []
+isStarred: false
+isTrashed: false

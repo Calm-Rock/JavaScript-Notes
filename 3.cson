@@ -1,0 +1,156 @@
+createdAt: "2018-04-25T13:14:01.346Z"
+updatedAt: "2018-04-30T11:48:24.213Z"
+type: "SNIPPET_NOTE"
+folder: "8121e771b5582b371f1f"
+title: "First"
+description: '''
+  First
+  
+'''
+snippets: [
+  {
+    name: "basics"
+    mode: "HTML"
+    content: '''
+      <!-- <h1>, <p> etc are called as "elements".-->
+      
+      <h1> Hello World! </h1>  
+      <!--h1 is generally used for heading
+      <h2></h2> are use for sub headings-->
+      
+      <h2 style = "color": blue>Blah Blah </h2>
+      <!-- Changes color of text -->
+    '''
+  }
+  {
+    name: "css selector"
+    mode: "HTML"
+    content: '''
+      <!-- We can use css to crete styles , for this we use the <style> element-->
+      
+      <style>
+        h2 {color: red; }	       
+      </style>
+      
+      <!--this will make all the h2 elements as red 
+      the {} par is called CSS selector-->
+    '''
+  }
+  {
+    name: "class"
+    mode: "HTML"
+    content: '''
+      <!-- if we don't want to add color to each heading element, we can use class
+      They are reusable styles which can be added to html elements-->
+      
+      <style>
+        .blue-text {
+          color: blue;
+        }
+        </style>
+      <!-- This CSS class is called blue-text-->
+      
+      <h2 class="blue-text">CatPhotoApp</h2>
+      <!-- That's how we ue class in html elements
+      Notice that there is no " . " while using class in an element-->
+      
+      
+      
+      
+    '''
+  }
+  {
+    name: "fontsize and type"
+    mode: "HTML"
+    content: '''
+      inside the styles tag
+      
+      <style>
+        p {
+          font-size: 30px;
+        }
+      </style>
+      
+      <!--this will set all the paragraph text to size 30,
+      don't forrget the "px" after 30 -->
+      
+      h2 {
+      font-family: Sans-serif;
+      }
+      
+      
+      <!--You'll need to make a call to Google to grab the Lobster font and load it into your HTML.
+      
+      <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+      -->
+      
+      <!--
+      When one font isn't available, you can tell the browser to "degrade" to another font.
+      For example, if you wanted an element to use the Helvetica font, but also degrade to the Sans-Serif font when Helvetica wasn't available, you could use this CSS style: -->
+      p {
+        font-family: Helvetica, Sans-Serif;
+      }
+    '''
+  }
+  {
+    name: "Images"
+    mode: "HTML"
+    content: '''
+      <img src="https://www.your-image-source.com/your-image.jpg" alt="Author standing on a beach with two thumbs up. ">
+      
+      <!--The text inside an alt attribute is used for screen readers to improve accessibility and is displayed if the image fails to load. -->
+      
+      
+      
+    '''
+  }
+  {
+    name: "Width and borders"
+    mode: "HTML"
+    content: '''
+      <style>
+        .larger-image {
+          width: 500px;
+        }
+        </style>
+      <!-- Use this class with an element to set its width to 500 px -->
+      
+      
+      <style>
+        .thin-red-border {
+          border-color: red;
+          border-width: 5px;
+          border-style: solid;
+        }
+      </style>
+      <!-- This class can  be used to create 5px thick red solid border around the element -->
+      
+      <!-- To add multiple class to an element, we can seperate them by "space" -->
+      <img class="class1 class2">
+      
+    '''
+  }
+  {
+    name: "border radius"
+    mode: "Plain Text"
+    content: '''
+      use border-radius: 10px to  give a smooth corner to an image border.
+      
+                  OR
+                  
+                border-radius: 50%
+    '''
+  }
+]
+tags: [
+  "Basics"
+  "Change_Color"
+  "class"
+  "font"
+  "images"
+  "soomth_corners"
+  "width"
+  "border"
+]
+isStarred: false
+isTrashed: false
